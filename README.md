@@ -1,2 +1,4 @@
 ![Metrics](/github-metrics.svg)
-![visitors](https://visitor-badge.glitch.me/badge?page_id=9thChasingWindGirl&left_color=green&right_color=red)
+
+![Typing SVG](https://readme-typing-svg.demolab.com/?lines=9th+Chasing+Wind+Girl)
+
