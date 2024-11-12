@@ -46,10 +46,4 @@ jobs:
           plugin_starlists_shuffle_repositories: yes
           plugin_stars: yes
           plugin_stars_limit: 3
-          plugin_steam: yes
-          plugin_steam_achievements_limit: 2
-          plugin_steam_games_limit: 3
-          plugin_steam_playtime_threshold: 2
-          plugin_steam_recent_games_limit: 3
-          plugin_steam_sections: player, most-played, recently-played
-          plugin_steam_user: https://steamcommunity.com/profiles/76561198802823525/
+
