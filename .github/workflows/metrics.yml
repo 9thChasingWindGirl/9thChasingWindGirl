@@ -2,15 +2,13 @@
 name: Metrics
 on:
   # Schedule updates (each hour)
-  schedule: [{cron: "0 0 */3 * *"}]
+  schedule: [{cron: "0 * * * *"}]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment: 
-      name: production
     permissions:
       contents: write
     steps:
@@ -30,20 +28,52 @@ jobs:
           user: 9thChasingWindGirl
           template: classic
           base: header, activity, community, repositories, metadata
+          config_octicon: yes
           config_timezone: Asia/Hong_Kong
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          config_twemoji: yes
+          plugin_16personalities: yes
+          plugin_16personalities_scores: yes
+          plugin_16personalities_sections: personality
+          plugin_16personalities_url: https://www.16personalities.com/profiles/b824fc4e680c7
+          plugin_calendar: yes
+          plugin_calendar_limit: 2
+          plugin_followup: yes
+          plugin_followup_archived: yes
+          plugin_followup_indepth: yes
+          plugin_followup_sections: repositories
+          plugin_lines: yes
+          plugin_lines_history_limit: 2
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base
           plugin_people: yes
           plugin_people_identicons: yes
           plugin_people_limit: 24
           plugin_people_shuffle: yes
           plugin_people_size: 28
           plugin_people_types: followers, following
-          plugin_starlists: yes
-          plugin_starlists_limit: 2
-          plugin_starlists_limit_languages: 8
-          plugin_starlists_limit_repositories: 2
-          plugin_starlists_shuffle_repositories: yes
+          plugin_reactions: yes
+          plugin_reactions_display: absolute
+          plugin_reactions_limit: 200
+          plugin_reactions_limit_discussions: 100
+          plugin_reactions_limit_discussions_comments: 100
+          plugin_reactions_limit_issues: 100
+          plugin_screenshot: yes
+          plugin_screenshot_background: yes
+          plugin_screenshot_mode: image
+          plugin_screenshot_selector: body
+          plugin_screenshot_title: Screenshot
+          plugin_screenshot_url: https://blog.whysoserious.dpdns.org/about
+          plugin_screenshot_viewport: {
+  "width": 1280,
+  "height": 1280
+}
+
           plugin_stars: yes
           plugin_stars_limit: 3
-
+          plugin_steam: yes
+          plugin_steam_achievements_limit: 2
+          plugin_steam_games_limit: 1
+          plugin_steam_playtime_threshold: 2
+          plugin_steam_recent_games_limit: 1
+          plugin_steam_sections: player, most-played, recently-played
+          plugin_steam_user: 76561198035148446
