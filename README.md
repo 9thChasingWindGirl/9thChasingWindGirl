@@ -3,7 +3,7 @@
 
 ### A frontend programmer who hasn't mastered his craft
 
-<p align="left"> <img src="https://avatars.githubusercontent.com/u/69580996?v=4" alt="9thChasingWindGirl" /></p>
+<p align="left"> <img src="https://avatars.githubusercontent.com/u/69580996?v=4" alt="9thChasingWindGirl" height="100" width="100" /></p>
 
 - 🔭 I'm currently working on **• Forking and redesigning an existing project
 • Building a OneTap note-taking app
